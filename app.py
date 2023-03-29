@@ -26,6 +26,6 @@ def startTyping(token, id):
         send = requests.post(url, headers = header)
         if(send.status_code == 204):
             print(f'[{send.status_code}] Success!')
-        time.sleep(3000)
+        time.sleep(3)
 
 startTyping('tuken','id')
